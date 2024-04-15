@@ -13,5 +13,3 @@ print(type(age))
 year = 2024 - age
 
 print(year)
-
-
