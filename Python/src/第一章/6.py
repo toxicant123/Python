@@ -1,0 +1,13 @@
+name = input('请输入姓名：')
+business = input('请输入公司：')
+job = input('请输入职位：')
+tel = input('请输入电话：')
+email = input('请输入邮箱：')
+
+print('******************************')
+print('姓名：' + name)
+print('公司：' + business)
+print('职位：' + job)
+print('电话：' + tel)
+print('邮箱：' + email)
+print('******************************')
