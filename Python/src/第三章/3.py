@@ -1,0 +1,10 @@
+print(3 == 3)
+print(3 != '3')
+print(3 >= 4)
+print(3 <= 3)
+print(3.0 == 3)
+print(3.0000000001 == 3)
+print(3 == True)
+print('hello' < 'hi')
+
+print(ord('a'))
