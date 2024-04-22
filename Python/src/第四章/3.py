@@ -9,3 +9,5 @@ match x:
         print('x is 3')
     case _:
         print('unknown x')
+
+print('exec finished')
