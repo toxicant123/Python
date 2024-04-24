@@ -1,10 +1,8 @@
-print(1 + 1)
+n = 1
+result = 0
 
-print(1 + 2)
+while n <= 100:
+    result += n
+    n += 1
 
-print(1 + 3)
-
-a = None
-
-if a:
-    print('success')
+print(result)
