@@ -9,6 +9,10 @@ print(d)
 
 print(d['name'])
 
+d['address'] = 'sky'
+
+print(d.get('address'))
+
 print(type(d))
 
 d = {}
