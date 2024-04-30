@@ -20,3 +20,5 @@ print(d.update({'money': 100}))
 
 print(d)
 
+print(1 + 1)
+
