@@ -12,3 +12,11 @@ print(d.pop('name'))
 print(d)
 
 print(len(d))
+
+# print(d.popitem())
+# print(d)
+
+print(d.update({'money': 100}))
+
+print(d)
+
