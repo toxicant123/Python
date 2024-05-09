@@ -1,3 +1,4 @@
-print(2 + 2)
+def func(a=1, b=2, c=3):
+    print(a + b + c)
 
-print(2 + 3)
+
