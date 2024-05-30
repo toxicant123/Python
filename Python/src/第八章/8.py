@@ -7,6 +7,8 @@ def total(*a):
 
 print(total(1, 2, 3, 4, 5))
 
+print(total(*[100, 200, 300]))
+
 
 def f(**kwargs):
     for key, value in kwargs.items():
@@ -16,3 +18,4 @@ def f(**kwargs):
 f(**{
     'a': 1, 'b': 2, 'c': 3
 })
+
