@@ -20,5 +20,16 @@ str7 = r'a\nb\nc'
 str8 = '''a1
 b2
 c3'''
+str9 = r'''a1
+b2\nc3'''
 
-print(str1, str2, str3, str4, str5, str6, str7, str8)
+print(str1, str2, str3, str4, str5, str6, str7, str8, str9)
+
+bool1 = True
+bool2 = False
+
+print(bool1, bool2)
+
+none1 = None
+
+print(none1)
