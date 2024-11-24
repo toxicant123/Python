@@ -2,6 +2,11 @@
 
 # 1. 输入与输出
 
+| 方法      | 示例                   |
+|---------|----------------------|
+| input() | a = input('请输入您的名字') |
+| print() | print('Hello World') |
+
 ```python
 # input函数的返回值为string
 num_str = input('请输入一个数字：')
@@ -58,3 +63,44 @@ none1 = None
 
 print(none1)
 ```
+
+| 运算符 | 示例            |
+|-----|---------------|
+| and | True and True |
+| or  | True or False |
+| not | not Ture      |
+
+```python
+bool1 = True and True
+bool2 = True or False
+bool3 = not True
+
+print(bool1, bool2, bool3)
+```
+
+## 2.2 字符串和编码
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
