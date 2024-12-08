@@ -25,6 +25,7 @@ print('该数字的立方为', float(num_str) ** 3)
 | 字符串 | 'a', "b", '"', "I'm ok", 'you\\'re ok?', 'a\nb\nc', r'a\nb\nc', '''a1<br/>b2<br/>c3''', r'''a1<br/>b2\nc3''' |
 | 布尔值 | Ture, False                                                                                                  |
 | 空值  | None                                                                                                         |
+| 字节  | b'A', b'\xe4\xb8\xad\xe6\x96\x87'                                                                            |
 
 ```python
 num1 = 100
@@ -80,12 +81,12 @@ print(bool1, bool2, bool3)
 
 ## 2.2 字符串和编码
 
-| 方法    | 示例       |
-|-------|----------|
-| ord() | ord('A') |
-| chr() | chr(66)  |
-|       |          |
-|       |          |
+| 方法          | 示例                   |
+|-------------|----------------------|
+| ord()       | ord('A')             |
+| chr()       | chr(66)              |
+| ''.encode() | 'A'.encode('utf-8')  |
+| ''.decode() | b'A'.decode('utf-8') |
 
 
 
