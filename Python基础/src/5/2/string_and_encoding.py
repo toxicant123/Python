@@ -10,5 +10,3 @@ print(chinese.decode('utf-8'))
 
 print(len('中文'))
 print(len(chinese))
-
-print(b'A'.decode('utf-8'))

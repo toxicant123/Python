@@ -81,14 +81,29 @@ print(bool1, bool2, bool3)
 
 ## 2.2 字符串和编码
 
-| 方法          | 示例                   |
-|-------------|----------------------|
-| ord()       | ord('A')             |
-| chr()       | chr(66)              |
-| ''.encode() | 'A'.encode('utf-8')  |
-| ''.decode() | b'A'.decode('utf-8') |
+| 方法          | 示例                   | 作用             |
+|-------------|----------------------|----------------|
+| ord()       | ord('A')             | 获取unicode编码    |
+| chr()       | chr(66)              | 将unicode编码转为字符 |
+| ''.encode() | 'A'.encode('utf-8')  | 将字符串编码为字节      |
+| ''.decode() | b'A'.decode('utf-8') | 将字节解码为字符串      |
 
+```python
+print(ord('A'))
+print(ord('中'))
 
+print(chr(66))
+print(chr(33421))
+
+print('中文'.encode('utf-8'))
+chinese = b'\xe4\xb8\xad\xe6\x96\x87'
+print(chinese.decode('utf-8'))
+
+print(len('中文'))
+print(len(chinese))
+```
+
+### 2.2.1 格式化
 
 
 
