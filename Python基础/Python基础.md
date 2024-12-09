@@ -136,14 +136,31 @@ print(f'The area of a circle with radius {r} is {s:.2f}')
 
 ## 2.3 list和tuple
 
-| 方法       | 示例                  | 作用               |
-|----------|---------------------|------------------|
-| len()    | [1, 2, 3].len()     | 获取list或tuple的长度  |
-| append() | [].append(1)        | 往list中添加元素到末尾    |
-| insert() | [1, 2].insert(1, 3) | 往list的某个索引位置添加元素 |
-|          |                     |                  |
+| 方法       | 示例                  | 作用                        |
+|----------|---------------------|---------------------------|
+| len()    | [1, 2, 3].len()     | 获取list或tuple的长度           |
+| append() | [].append(1)        | 往list中添加元素到末尾             |
+| insert() | [1, 2].insert(1, 3) | 往list的某个索引位置添加元素          |
+| pop()    | pop(), pop(1)       | 删除指定位置的元素，若不传入索引则删除最后一个元素 |
 
+```python
+list1 = [1, 2, 3]
 
+print(list1)
+print(list1[0])
+
+list1.append(4)
+print(list1)
+
+list2 = [1, 2]
+list2.insert(1, 3)
+print(list2)
+
+a = list1.pop()
+b = list1.pop(0)
+print(a, b)
+print(list1)
+```
 
 
 
