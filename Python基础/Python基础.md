@@ -105,12 +105,34 @@ print(len(chinese))
 
 ### 2.2.1 格式化
 
+| 占位符 | 替换内容    | 备注                            |
+|-----|---------|-------------------------------|
+| %d  | 	整数     | %nd表示将数字补空格至n位，%0nd表示将数字补0至n位 |
+| %f  | 	浮点数    | $.nf表示保留n位小数的浮点数              |
+| %s  | 	字符串    |                               |
+| %x  | 	十六进制整数 |                               |
 
+```python
+print('Hi, Mr.%s, You have %d' % ('Tom', 10000))
+print('%2d-%02d' % (3, 1))
+print('%.2f' % 3.1415926)
+print('reduce %d%%' % 3)
+```
 
+| 方法       | 示例                  | 作用     |
+|----------|---------------------|--------|
+| format() | 'a {0}'.format('b') | 格式化字符串 |
 
+f-string，即f开头的字符串也可以用于格式化
 
+```python
+str = 'Hello, {0}. Your score improved {1:.1f}%'.format('XiaoMing', 14)
+print(str)
 
-
+r = 2.5
+s = 3.14 * r ** 2
+print(f'The area of a circle with radius {r} is {s:.2f}')
+```
 
 
 
