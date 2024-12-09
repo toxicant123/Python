@@ -126,15 +126,19 @@ print('reduce %d%%' % 3)
 f-string，即f开头的字符串也可以用于格式化
 
 ```python
-str = 'Hello, {0}. Your score improved {1:.1f}%'.format('XiaoMing', 14)
-print(str)
+str1 = 'Hello, {0}. Your score improved {1:.1f}%'.format('XiaoMing', 14)
+print(str1)
 
 r = 2.5
 s = 3.14 * r ** 2
 print(f'The area of a circle with radius {r} is {s:.2f}')
 ```
 
+## 2.3 list和tuple
 
+| 方法    | 示例              | 作用              |
+|-------|-----------------|-----------------|
+| len() | [1, 2, 3].len() | 获取list或tuple的长度 |
 
 
 
