@@ -210,6 +210,8 @@ match score:
         print('score is unknown')
 ```
 
+`_`表示匹配任意值
+
 复杂匹配：
 
 ```python
@@ -247,7 +249,23 @@ match args:
         print('invalid command.')
 ```
 
+## 2.6 循环
 
+for:
+
+```python
+names = ['Tom', 'Jerry', 'Jack']
+
+for name in names:
+    print(name)
+
+for i, name in enumerate(names):
+    print(i, name)
+
+number_sum = 0
+for x in range(100):
+    number_sum += x
+```
 
 
 
