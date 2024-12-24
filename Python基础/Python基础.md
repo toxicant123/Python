@@ -284,8 +284,25 @@ while count > 0:
 print(letter_str)
 ```
 
+break:
 
+```python
+for i in range(3):
+    if i == 1:
+        break
+    print(i)
+```
 
+continue:
+
+```python
+for i in range(3):
+    if i == 1:
+        continue
+    print(i)
+```
+
+## 2.7 dict和set
 
 
 

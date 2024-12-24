@@ -17,3 +17,13 @@ while count > 0:
     count -= 1
 
 print(letter_str)
+
+for i in range(3):
+    if i == 1:
+        break
+    print(i)
+
+for i in range(3):
+    if i == 1:
+        continue
+    print(i)
