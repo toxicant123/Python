@@ -304,5 +304,31 @@ for i in range(3):
 
 ## 2.7 dict和set
 
+| 方法            | 示例                                                                           | 作用            |
+|---------------|------------------------------------------------------------------------------|---------------|
+| dict.get()    | d.get('a')                                                                   | 获取key为a的值     |
+| dict.pop()    | d.pop('a')                                                                   | 获取并删除key为a的值  |
+| dict.update() | d.update({'a': 1, 'b': '2'})<br/>d.update(c=3, d=4)<br/>d.update([('e', 5)]) | 更新dict的k、v键值对 |
 
+dict:
+
+```python
+d = {
+    'a': 1,
+    'b': '2',
+    'c': True
+}
+
+d['d'] = [1, 2, 3]
+
+print(d['d'])
+print('f' in d)
+print(d.get('a'))
+print(d.get('g', 6))
+print(d.pop('d'))
+print(d.get('d'))
+d.update({'a': 1, 'b': '2'})
+d.update(c=3, d=4)
+d.update([('e', 5)])
+```
 
