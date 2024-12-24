@@ -251,6 +251,11 @@ match args:
 
 ## 2.6 循环
 
+| 方法          | 示例                   | 作用               |
+|-------------|----------------------|------------------|
+| range()     | range(100)           | 生成一个从0-99的可迭代对象  |
+| enumerate() | enumerate([1, 2, 3]) | 生成一个带有索引和值的可迭代对象 |
+
 for:
 
 ```python
@@ -267,6 +272,17 @@ for x in range(100):
     number_sum += x
 ```
 
+while:
+
+```python
+letter_str = ''
+count = 26
+while count > 0:
+    letter_str += chr(97 + (26 - count))
+    count -= 1
+
+print(letter_str)
+```
 
 
 
