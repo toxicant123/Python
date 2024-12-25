@@ -354,6 +354,8 @@ print(s.pop())
 
 # 3. 函数
 
+## 3.1 调用函数
+
 ```python
 print(abs(100))
 print(abs(-50))
@@ -369,3 +371,43 @@ print(bool(''))
 a = abs
 print(a(-1))
 ```
+
+## 3.2 定义函数
+
+```python
+import math
+
+def my_abs(x):
+    if not isinstance(x, (int, float)):
+        raise TypeError('bad operand type')
+    if x >= 0:
+        return x
+    else:
+        return -x
+
+print(my_abs(-2))
+# print(my_abs('3'))
+
+def get_circle_area_and_perimeter(radius):
+    area = math.pi * radius ** 2
+    perimeter = 2 * math.pi * radius
+    return area, perimeter
+
+circle_info = get_circle_area_and_perimeter(100)
+print(circle_info)
+```
+
+pass:
+
+作为占位符，防止语法报错
+
+```python
+def nop():
+    pass
+
+age = 19
+if age >= 18:
+    pass
+```
+
+
