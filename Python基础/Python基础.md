@@ -304,13 +304,13 @@ for i in range(3):
 
 ## 2.7 dict和set
 
+dict:
+
 | 方法            | 示例                                                                           | 作用            |
 |---------------|------------------------------------------------------------------------------|---------------|
 | dict.get()    | d.get('a')                                                                   | 获取key为a的值     |
 | dict.pop()    | d.pop('a')                                                                   | 获取并删除key为a的值  |
 | dict.update() | d.update({'a': 1, 'b': '2'})<br/>d.update(c=3, d=4)<br/>d.update([('e', 5)]) | 更新dict的k、v键值对 |
-
-dict:
 
 ```python
 d = {
@@ -332,3 +332,22 @@ d.update(c=3, d=4)
 d.update([('e', 5)])
 ```
 
+set:
+
+| 方法           | 示例                  | 作用            |
+|--------------|---------------------|---------------|
+| set.add()    | s.add(4)            | 向set内添加一个元素   |
+| set.remove() | s.remove(4)         | 从set内移除一个元素   |
+| set.update() | s.update([1, 2, 3]) | 向set内更新一组数据   |
+| set.pop()    | s.pop()             | 随机弹出set内的一个元素 |
+
+```python
+s = {1, 2, 3}
+s2 = set([4, 5, 6])
+s.add(4)
+s.remove(1)
+print(s & s2)
+print(s | s2)
+s.update([3, 4, 5, 6, 7, 8])
+print(s.pop())
+```
