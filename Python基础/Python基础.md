@@ -421,6 +421,8 @@ def power(x, n):
         n = n - 1
         s = s * x
     return s
+
+print(power(2, 2))
 ```
 
 默认参数：
@@ -432,5 +434,7 @@ def power(x, n=2):
         n = n - 1
         s = s * x
     return s
+
+print(power(2, n=3))
 ```
 
