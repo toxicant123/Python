@@ -496,3 +496,15 @@ f1(1, 2, 3, 'a', 'b', x=99)
 f2(1, 2, d=99, ext=None)
 ```
 
+## 3.4 递归函数
+
+```python
+def fact(n):
+    if n == 1:
+        return 1
+    return n * fact(n - 1)
+
+print(fact(5))
+print(fact(100))
+```
+
