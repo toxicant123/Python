@@ -467,3 +467,32 @@ person('Tom', 2, **person_info)
 ```
 
 命名关键字参数：
+
+```python
+def person2(name, age, *, city, job):
+    print('name:', name, 'age:', age, 'other:', city, 'job:', job)
+
+person2('Michael', 30, city='Ningbo', job='Engineer')
+
+def person3(name, age, *args, city, job):
+    print('name:', name, 'age:', age, 'args:', args, 'city:', city, 'job:', job)
+
+person3('Michael', 30, 1, 2, city='Ningbo', job='Engineer')
+```
+
+在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。
+
+```python
+def f1(a, b, c=0, *args, **kw):
+    print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw)
+
+def f2(a, b, c=0, *, d, **kw):
+    print('a =', a, 'b =', b, 'c =', c, 'd =', d, 'kw =', kw)
+
+f1(1, 2)
+f1(1, 2, c=3)
+f1(1, 2, 3, 'a', 'b')
+f1(1, 2, 3, 'a', 'b', x=99)
+f2(1, 2, d=99, ext=None)
+```
+
