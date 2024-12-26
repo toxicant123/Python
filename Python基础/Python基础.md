@@ -412,5 +412,25 @@ if age >= 18:
 
 ## 3.3 函数的参数
 
+位置参数：
 
+```python
+def power(x, n):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+```
+
+默认参数：
+
+```python
+def power(x, n=2):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+```
 
