@@ -5,4 +5,16 @@ def power(x, n=2):
         s = s * x
     return s
 
+
 print(power(5))
+
+
+def calc(*numbers):
+    number_sum = 0
+    for n in numbers:
+        number_sum += n * n
+    return number_sum
+
+
+print(calc(1, 3, 5, 7))
+

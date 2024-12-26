@@ -427,6 +427,8 @@ print(power(2, 2))
 
 默认参数：
 
+默认参数必须指向不变对象！
+
 ```python
 def power(x, n=2):
     s = 1
@@ -438,3 +440,14 @@ def power(x, n=2):
 print(power(2, n=3))
 ```
 
+可变参数：
+
+```python
+def calc(*numbers):
+    number_sum = 0
+    for n in numbers:
+        number_sum += n * n
+    return number_sum
+
+print(calc(1, 3, 5, 7))
+```
