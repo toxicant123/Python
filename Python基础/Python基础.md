@@ -511,3 +511,24 @@ print(fact(100))
 # 4. 高级特性
 
 ## 4.1 切片
+
+`a_list[a:b:c]`表示从索引a开始到索引b（不包括索引b）每c个取一个。a默认为0，b默认为`len(a_list)`，c默认为1
+
+切片可以对list、tuple、str使用
+
+```python
+num_list = [1, 2, 3, 4, 5, 6, 7, 8]
+
+print(num_list[0:3])
+print(num_list[:3])
+print(num_list[-2:-1])
+print(num_list[-10:])
+print(num_list[:])
+print(num_list[::2])
+
+num_tuple = (1, 2, 3, 4, 5)
+print(num_tuple[1:4:2])
+
+example_str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+print(example_str[1::3])
+```
