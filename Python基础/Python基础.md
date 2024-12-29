@@ -597,3 +597,26 @@ list6 = range(100)
 list7 = [x if x % 2 == 0 else -x for x in list6]
 print(list7)
 ```
+
+## 4.4 生成器
+
+生成器函数，在每次调用`next()`的时候执行，遇到`yield`语句返回，再次执行时从上次返回的`yield`语句处继续执行。
+
+调用生成器函数会创建一个生成器对象，多次调用生成器函数会创建多个相互独立的生成器。
+
+```python
+g = (x * x for x in range(10))
+
+for e in g:
+    print(e)
+
+def fib(max_num):
+    n, a, b = 0, 0, 1
+    while n < max_num:
+        yield b
+        a, b = b, a + b
+        n += 1
+
+for e in fib(100):
+    print(e)
+```
