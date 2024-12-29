@@ -620,3 +620,31 @@ def fib(max_num):
 for e in fib(100):
     print(e)
 ```
+
+## 4.5 迭代器
+
+可直接作用于for循环的对象统称为可迭代对象：`Iterable`
+
+可以被next()函数调用并不断返回下一个值的对象称为迭代器：`Iterator`
+
+想要把`Iterable`变成`Iterator`可以使用iter()函数
+
+```python
+from collections.abc import Iterable
+from collections.abc import Iterator
+
+print(isinstance([], Iterable))
+print(isinstance({}, Iterable))
+print(isinstance('', Iterable))
+print(isinstance((x for x in range(10)), Iterable))
+print(isinstance(100, Iterable))
+
+print(isinstance([], Iterator))
+print(isinstance({}, Iterator))
+print(isinstance('', Iterator))
+print(isinstance((x for x in range(10)), Iterator))
+print(isinstance(100, Iterator))
+
+print(isinstance(iter([]), Iterator))
+print(isinstance(iter({}), Iterator))
+```
