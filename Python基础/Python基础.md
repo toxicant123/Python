@@ -592,4 +592,8 @@ print(list3)
 list4 = ['Hello', 'World', 'IBM', 'Apple']
 list5 = [s.lower() for s in list4]
 print(list5)
+
+list6 = range(100)
+list7 = [x if x % 2 == 0 else -x for x in list6]
+print(list7)
 ```
