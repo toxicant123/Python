@@ -733,6 +733,27 @@ for n in get_prime():
         break
 ```
 
+### 5.1.3 sorted
+
+| 方法       | 示例                |
+|----------|-------------------|
+| sorted() | sorted([1, 2, 3]) |
+
+```python
+print(sorted([36, 5, -12, 9, -21]))
+
+print(sorted([36, 5, -12, 9, -21], key=abs))
+
+print(sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True))
+
+list1 = [113, 7, 19, 22, 51, 38, 40]
+
+def get_last_num(num):
+    return abs(num) % 10
+
+print(sorted(list1, key=get_last_num))
+```
+
 ## 5.2 返回函数
 
 使用闭包时，对外层变量赋值前，需要先使用`nonlocal`声明该变量不是当前函数的局部变量。
