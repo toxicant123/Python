@@ -664,6 +664,33 @@ def add(x, y, f):
 print(add(-1, 2, abs))
 ```
 
+### 5.5.1 map/reduce
+
+| 方法       | 示例                    |
+|----------|-----------------------|
+| map()    | map(fn, [1, 2, 3])    |
+| reduce() | reduce(fn, [1, 2, 3]) |
+
+```python
+from functools import reduce
+
+
+def f(x):
+    return x * x
+
+
+r = map(f, [1, 2, 3, 4, 5])
+print(list(r))
+
+
+def add(x, y):
+    return x + y
+
+
+r2 = reduce(add, [1, 2, 3, 4, 5])
+print(r2)
+```
+
 ## 5.2 返回函数
 
 使用闭包时，对外层变量赋值前，需要先使用`nonlocal`声明该变量不是当前函数的局部变量。
@@ -730,3 +757,7 @@ print(f())
 print(f())
 print(f())
 ```
+
+## 5.3 匿名函数
+
+
