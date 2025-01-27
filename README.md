@@ -7,3 +7,5 @@ Begin in 2024/04/14
 ## [Python基础](Python基础/Python基础.md)
 
 1
+
+2
